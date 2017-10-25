@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src=" http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    <script>
+        $(function () {
+            $(".test").click(function () {
+                var val=$(this).attr("id");
+                alert(val);
+            });
+
+            $("#student").click(function () {
+                var val=$(this).attr("name");
+                alert(val);
+            })
+            $("input").click(function () {
+                var val=$(this).val();
+                alert(val)
+            })
+        })
+
+    </script>
+</head>
+<body>
+<a id="user" class="test" href="#">User</a>
+<a id="admin" class="test" href="#">admin</a>
+<a id="student" name="Tom" href="#">Student</a>
+<input id="btn" type="button" name="ok" value="Hello" />
+</body>
+</html>
